@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'ORKPodFailure_Example' do
+  pod 'ORKPodFailure', :path => '../'
+
+  target 'ORKPodFailure_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  end
+end
